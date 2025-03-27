@@ -1,0 +1,50 @@
+<svg width="300" height="300" xmlns="http://www.w3.org/2000/svg">
+        <!-- <defs>
+            <clipPath id="recorte">
+                <circle cx="70" cy="50" r="50" fill="white" 
+                stroke="currentColor"
+                stroke-width="2" ></circle>
+            </clipPath>
+        </defs> -->
+
+        <circle cx="150" cy="50" r="50" fill="pink" stroke="" stroke-width="" >
+        </circle>
+
+        <circle cx="50" cy="130" r="50" fill="yellow" stroke="" stroke-width="" >
+        </circle>
+
+        <circle cx="70" cy="50" r="50" fill="red" stroke="" stroke-width="" mask="url(#agujero)">
+        </circle>
+
+        <defs>
+            <mask id="agujero">
+                <circle cx="150" cy="50" r="50" fill="blue" stroke="" stroke-width="" >
+                </circle>
+                <circle cx="50" cy="130" r="50" fill="yellow" stroke="" stroke-width="" >
+                </circle>
+            </mask>
+        </defs>
+
+        <!-- <circle cx="150" cy="50" r="50" fill="pink" stroke-width="" clip-Path="url(#recorte)">
+        </circle>
+
+        <circle cx="50" cy="130" r="50" fill="yellow"  stroke-width="" clip-Path="url(#recorte)">
+        </circle>
+
+        <circle cx="70" cy="50" r="50" fill="white" stroke-width="" clip-Path="url(#recorte)">
+        </circle>
+
+        <defs>
+            <clipPath id="recorte">
+                <circle cx="150" cy="50" r="50" fill="pink" stroke="currentColor" stroke-width="" >
+                </circle>
+        
+                <circle cx="50" cy="130" r="50" fill="yellow" stroke="currentColor" stroke-width="" >
+                </circle>
+            </clipPath>
+        </defs>  -->
+
+        <!-- <rect width="200" height="200" fill="green" mask="url(#agujero)" />    -->
+
+
+    </svg>
