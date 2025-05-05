@@ -1,0 +1,37 @@
+* {
+    box-sizing: border-box;
+}
+
+label {
+    display: block;
+}
+
+div {
+    background-color: aqua;
+    padding: 15px;
+    margin: 20px;
+}
+
+fieldset{
+    margin: 20px;
+}
+
+form {
+    max-width: 350px;
+    box-shadow: 15px 20px 10px black;
+    border-radius: 10px;
+    border: 1px solid black;
+}
+
+input[type="button"]{
+    width: 100%;
+    margin: 10px;
+    background-color: aqua;
+    border: none;
+
+}
+
+input {
+    margin-bottom: 10px;
+    width: 100% ;
+}
