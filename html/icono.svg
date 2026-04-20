@@ -1,0 +1,11 @@
+    <!-- viewBox -x -y w h , se pone negativo a diferencia 
+     de positivo en el viewport -->
+    <svg width="22" height="22"
+        viewBox="0 -7 22 22"
+       stroke="black" 
+       stroke-width="2" 
+       xmlns="http://www.w3.org/2000/svg">
+        <line x1="2" y1="4" x2="20" y2="4"></line>
+        <line x1="2" y1="9" x2="20" y2="9"></line>
+        <line x1="2" y1="14" x2="20" y2="14"></line>
+    </svg>
