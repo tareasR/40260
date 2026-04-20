@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE direccion SYSTEM "xml-00.dtd">
+<direccion>
+    <nombrecompleto>
+        <nombre>Rafael</nombre>
+        <apellidos>R C</apellidos>
+    </nombrecompleto>
+    <correo>rrojano@uv.mx</correo>
+    <telefono>1919139393</telefono>
+    <cumple>
+        <dia>1</dia>
+        <mes>1</mes>
+        <anio>1</anio>
+    </cumple>
+</direccion>
