@@ -1,0 +1,30 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+}
+
+button {
+    /* width: 33.3%; */
+    width: 33.3%;
+    height: 30px;
+}
+
+button[id="b0"] {
+    width: 100%;
+    color: red;
+}
+
+div {
+    width: 100px;
+    display: flex;
+    flex-wrap: wrap;  
+}
+
+input {
+    width: 100%;
+    height: 30px;
+}
+
+.operadores {
+    color:blue;
+}

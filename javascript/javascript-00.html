@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h1 id="a">Título</h1>
+    <p id="b">Esto es un párrafo</p>
+    <button id="c" onclick="escribe()">Hola</button>
+    <input type="text">
+    <button id="d">color</button>
+
+
+    <script>
+        // esto es un comentario javascript
+        let i = 5
+        // const elemento = "abcdef"
+        // var elemento = 0
+        let elemento = [1, 2, 3, 4]
+        console.log(elemento)
+        console.log(elemento[0])
+
+        for (i = 0; i < elemento.length; i++)
+            console.log(elemento[i])
+
+        for (const key in elemento) {
+            if (Object.prototype.hasOwnProperty.call(elemento, key)) {
+                const element = elemento[key];
+                console.log("forin " + element)
+            }
+        }
+
+        function saludar() {
+            console.log("hola mundo")
+        }
+
+        console.log(i)
+        for (i = 0; i < 10; i++)
+            if (i != 5)
+                console.log("hola mundo")
+        saludar();
+        console.log(i)
+
+        let boton = document.getElementById("c")
+        console.log(boton)
+
+        function escribe() {
+            // acceso al DOM = Document Object Model
+            console.log(document.URL)
+            const html = document.getElementById("b")
+            console.log(html.innerText)
+            html.innerText = "Esto es un nuevo texto"
+
+            // recuperar información del input
+            let entrada = document.getElementsByTagName("input")
+            console.log(entrada[0].value)
+            html.innerText = entrada[0].value
+            // for (const key in entrada) {
+            //     if (Object.prototype.hasOwnProperty.call(entrada, key)) {
+            //         const element = entrada[key];
+            //         console.log(element)
+            //     }
+            // }
+        }
+
+        let color = document.getElementById("d")
+        //color.addEventListener("click", cambiarColor)
+        color.addEventListener("click", function () {
+            let entrada = document.getElementsByTagName("input")
+            let titulo = document.getElementById("a")
+            titulo.style.color = entrada[0].value
+        })
+
+        function cambiarColor() {
+            let entrada = document.getElementsByTagName("input")
+            let titulo = document.getElementById("a")
+            titulo.style.color = entrada[0].value
+        }
+    </script>
+</body>
+
+</html>
