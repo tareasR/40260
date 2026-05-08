@@ -27,19 +27,43 @@ function operadores(e) {
 let prm1
 let operacion
 function almacena_parametro(prm) {
-    prm1 = resultado.value
+    // prm1 = resultado.value
+    parametros.push(resultado.value)
+    eventos.push(resultado.value)
     resultado.value = ""
     operacion = prm
+    eventos.push(operacion)
 }
 
 function igual() {
-    prm2 = resultado.value
-    if (operacion == "+")
-        resultado.value = parseInt(prm1) + parseInt(prm2)
-    if (operacion == "-")
-        resultado.value = parseInt(prm1) - parseInt(prm2)
-    if (operacion == "*")
-        resultado.value = parseInt(prm1) * parseInt(prm2)
-    if (operacion == "/")
-        resultado.value = parseInt(prm1) / parseInt(prm2)
+    // prm2 = resultado.value
+    let variable = null
+    parametros.push(resultado.value)
+    eventos.push(resultado.value)
+    for (const key in parametros) {
+        if (Object.prototype.hasOwnProperty.call(parametros, key)) {
+            const prm = parametros[key];
+            if (operacion == "+")
+                variable += parseInt(prm)
+            if (operacion == "-")
+                if (variable == null)
+                    variable = parseInt(prm)
+                else
+                    variable -= parseInt(prm)
+            if (operacion == "*")
+                if (variable == null)
+                    variable = parseInt(prm)
+                else
+                    variable *= parseInt(prm)
+            if (operacion == "/")
+                if (variable == null)
+                    variable = parseInt(prm)
+                else
+                    variable /= parseInt(prm)
+        }
+    }
+    resultado.value = variable
 }
+
+let parametros = []
+let eventos = []
